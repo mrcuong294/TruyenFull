@@ -13,7 +13,13 @@ public class Book {
 
     private boolean isFull;
 
+    private boolean isHot;
+
     private String linkPoster;
+
+    private String chapter;
+
+    private String timeUpdate;
 
     public String getName() {
         return name;
@@ -45,5 +51,29 @@ public class Book {
 
     public void setFull(boolean full) {
         isFull = full;
+    }
+
+    public boolean isHot() {
+        return isHot;
+    }
+
+    public void setHot(boolean hot) {
+        isHot = hot;
+    }
+
+    public String getChapter() {
+        return chapter;
+    }
+
+    public void setChapter(String chapter) {
+        this.chapter = chapter;
+    }
+
+    public String getTimeUpdate() {
+        return timeUpdate;
+    }
+
+    public void setTimeUpdate(String timeUpdate) {
+        this.timeUpdate = timeUpdate;
     }
 }

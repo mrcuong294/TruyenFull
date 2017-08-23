@@ -8,12 +8,21 @@ import java.util.ArrayList;
  */
 
 public class Block {
-    String title;
-    String url;
-    ArrayList<Book> listBooks;
+    private int style;
+    private String title;
+    private String url;
+    private ArrayList<Book> listBooks;
 
+    public int getStyle() {
+        return style;
+    }
+
+    public void setStyle(int style) {
+        this.style = style;
+    }
 
     public String getTitle() {
+        if (title == null) return "";
         return title;
     }
 
@@ -22,6 +31,7 @@ public class Block {
     }
 
     public String getUrl() {
+        if (url == null) return "";
         return url;
     }
 
@@ -30,6 +40,7 @@ public class Block {
     }
 
     public ArrayList<Book> getListBooks() {
+        if (listBooks == null) listBooks = new ArrayList<>();
         return listBooks;
     }
 
