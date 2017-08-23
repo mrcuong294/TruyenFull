@@ -11,9 +11,13 @@ public class Book {
 
     private String url;
 
+    private String author;
+
     private boolean isFull;
 
     private boolean isHot;
+
+    private boolean isNew;
 
     private String linkPoster;
 
@@ -43,6 +47,14 @@ public class Book {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public boolean isFull() {
@@ -75,5 +87,13 @@ public class Book {
 
     public void setTimeUpdate(String timeUpdate) {
         this.timeUpdate = timeUpdate;
+    }
+
+    public boolean isNew() {
+        return isNew;
+    }
+
+    public void setNew(boolean aNew) {
+        isNew = aNew;
     }
 }
