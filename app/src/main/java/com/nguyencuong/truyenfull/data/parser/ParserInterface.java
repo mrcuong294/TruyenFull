@@ -3,6 +3,7 @@ package com.nguyencuong.truyenfull.data.parser;
 import com.nguyencuong.truyenfull.model.Block;
 import com.nguyencuong.truyenfull.model.Book;
 import com.nguyencuong.truyenfull.model.Category;
+import com.nguyencuong.truyenfull.model.Chapter;
 
 import java.util.ArrayList;
 
@@ -24,9 +25,8 @@ public interface ParserInterface {
      * Load book info and list chapter;
      *
      * @param url link book;
-     * @param page pager chapter;
      */
-    void loadBookDocument(String url, int page);
+    void loadBookDocument(String url);
 
     /**
      * Get category in homepage;
@@ -60,4 +60,20 @@ public interface ParserInterface {
      * @return The {@link Book}
      */
     Book getBookInfo(String url);
+
+    /**
+     * Get list new chapter of book;
+     * @param url link book
+     * @return list chapter;
+     */
+    ArrayList<Chapter> getBookNewChapters(String url);
+
+    /**
+     * Get list chapter of book without page;
+     *
+     * @param url link book;
+     * @param page page number;
+     * @return list {@link Chapter}
+     */
+    public ArrayList<Chapter> getListChapter(String url, int page);
 }

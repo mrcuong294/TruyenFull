@@ -4,10 +4,12 @@ import com.google.gson.Gson;
 import com.nguyencuong.truyenfull.model.Block;
 import com.nguyencuong.truyenfull.model.Book;
 import com.nguyencuong.truyenfull.model.Category;
+import com.nguyencuong.truyenfull.model.Chapter;
 
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  * Content class.
@@ -58,4 +60,25 @@ public class TruyenFullParserTest {
         }
     }
 
+    @Test
+    public void getListChapter() throws Exception {
+        String url = "http://truyenfull.vn/noi-yeu-em-99-lan/";
+
+        ArrayList<Chapter> list = TruyenFullParser.getInstance().getListChapter(url, 2);
+        System.out.println("List : \n" + new Gson().toJson(list));
+    }
+
+    @Test
+    public void getChapterMapInfo() throws Exception {
+        String url = "http://truyenfull.vn/linh-vu-thien-ha/chuong-1/";
+
+        Map map = TruyenFullParser.getInstance().getChapterMapInfo(url);
+        if (map == null) {
+            System.out.println("Map chapter is null");
+        } else {
+            System.out.println("Prev : " + map.get("prev_chap"));
+            System.out.println("Next : " + map.get("next_chap"));
+            System.out.println("Content : " + map.get("content"));
+        }
+    }
 }

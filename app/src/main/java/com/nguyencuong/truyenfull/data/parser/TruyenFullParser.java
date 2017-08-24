@@ -4,7 +4,10 @@ import com.nguyencuong.truyenfull.constance.BlockStyle;
 import com.nguyencuong.truyenfull.model.Block;
 import com.nguyencuong.truyenfull.model.Book;
 import com.nguyencuong.truyenfull.model.Category;
+import com.nguyencuong.truyenfull.model.Chapter;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -12,6 +15,12 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * The Class
@@ -64,18 +73,11 @@ public class TruyenFullParser implements ParserInterface {
      * Load book info and list chapter;
      *
      * @param url link book;
-     * @param page pager chapter;
      */
     @Override
-    public void loadBookDocument(String url, int page) {
+    public void loadBookDocument(String url) {
         if (document == null || document.select("body#body_truyen").first() == null) {
             try {
-                if (page > 1) {
-                    if (!url.substring(url.length() - 1).equalsIgnoreCase("/")) {
-                        url += "/";
-                    }
-                    url += "trang-" + page + "/";
-                }
                 document = Jsoup.connect(url).get();
             } catch (IOException e) {
                 document = null;
@@ -291,10 +293,12 @@ public class TruyenFullParser implements ParserInterface {
      */
     @Override
     public Book getBookInfo(String url) {
-        loadBookDocument(url, 0);
+        loadBookDocument(url);
 
         if (document != null) {
             Book book = new Book();
+
+            book.setId(document.getElementById("truyen-id").attr("value"));
 
             Element infoDescElement = document.select("div.col-info-desc").first();
 
@@ -350,6 +354,115 @@ public class TruyenFullParser implements ParserInterface {
         }
 
         return null;
+    }
+
+    /**
+     * Get list new chapter of book;
+     *
+     * @param url link book
+     * @return list chapter;
+     */
+    @Override
+    public ArrayList<Chapter> getBookNewChapters(String url) {
+        loadBookDocument(url);
+        ArrayList<Chapter> listChapter = new ArrayList<>();
+
+        if (document != null) {
+            for (Element element : document.select("ul.l-chapters li a")) {
+                Chapter chapter = new Chapter();
+                chapter.setName(element.text());
+                chapter.setUrl(element.attr("href"));
+
+                listChapter.add(chapter);
+            }
+        }
+        return listChapter;
+    }
+
+    /**
+     * Get list chapter of book without page;
+     *
+     * @param url link book;
+     * @param page page number;
+     * @return list {@link Chapter}
+     */
+    @Override
+    public ArrayList<Chapter> getListChapter(String url, int page) {
+
+        // Load book id & total page chapter;
+        int bookId = getBookId(url);
+        int totalPage = getBookTotalPageChapter(url);
+
+        if (bookId == 0 || totalPage == 0 || page > totalPage) {
+            return new ArrayList<>();
+        }
+
+        // Build url load;
+        String urlAjax = URL_PAGE + "/ajax.php?type=list_chapter";
+        urlAjax += "&tid=" + bookId;
+        urlAjax += "&page=" + page + "&totalp=" + totalPage;
+        urlAjax += "&hash=" + getAjaxHashKey();
+
+        try {
+            OkHttpClient client = new OkHttpClient();
+            Request request = new Request.Builder()
+                    .url(urlAjax)
+                    .build();
+
+            Response response = client.newCall(request).execute();
+
+            String json = response.body().string();
+            JSONObject jsonObject = new JSONObject(json);
+
+            if (jsonObject.has("chap_list")) {
+                String html = jsonObject.getString("chap_list");
+                Document doc = Jsoup.parseBodyFragment(html);
+
+                ArrayList<Chapter> list = new ArrayList<>();
+
+                for (Element element : doc.select(".list-chapter li a")) {
+                    Chapter chapter = new Chapter();
+                    chapter.setName(element.text());
+                    chapter.setUrl(element.attr("href"));
+                    list.add(chapter);
+                }
+                return list;
+            }
+
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
+        }
+
+        return new ArrayList<>();
+    }
+
+    /**
+     * Get Book id;
+     *
+     * @param url link book;
+     * @return book id;
+     */
+    public int getBookId(String url) {
+        loadBookDocument(url);
+
+        if (document != null) {
+            return Integer.parseInt(document.getElementById("truyen-id").attr("value"));
+        }
+        return 0;
+    }
+
+    /**
+     * Get total page chapter
+     * @param url link book;
+     * @return total page;
+     */
+    public int getBookTotalPageChapter(String url) {
+        loadBookDocument(url);
+
+        if (document != null) {
+            return Integer.parseInt(document.getElementById("total-page").attr("value"));
+        }
+        return 0;
     }
 
     /**
@@ -420,6 +533,44 @@ public class TruyenFullParser implements ParserInterface {
         }
 
         return new ArrayList<>();
+    }
+
+    /**
+     * Get chapter content and url next chapter & prev chapter;
+     *
+     * @param url link chapter;
+     * @return The HashMap chapter info : content => content chapter; next_chap => url next chapter;
+     *          prev_chap => url previous chapter;
+     */
+    public Map<String, String> getChapterMapInfo(String url) {
+        if (url == null || url.length() < 5) {
+            return null;
+        }
+
+        try {
+            Document doc = Jsoup.connect(url).get();
+            if (doc != null) {
+                HashMap<String, String> map = new HashMap<>();
+
+                map.put("content", doc.getElementsByClass("chapter-c").first().html());
+
+                Element nextChapElm = doc.getElementById("next_chap");
+                if (!nextChapElm.hasClass("disabled")) {
+                    map.put("next_chap", nextChapElm.attr("href"));
+                }
+
+                Element prevChapElm = doc.getElementById("prev_chap");
+                if (!prevChapElm.hasClass("disabled")) {
+                    map.put("prev_chap", prevChapElm.attr("href"));
+                }
+
+                return map;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 }
