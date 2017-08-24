@@ -19,11 +19,27 @@ public class Book {
 
     private boolean isNew;
 
-    private String linkPoster;
+    private String poster;
 
     private String chapter;
 
     private String timeUpdate;
+
+    private double rating;
+
+    private long ratingCount;
+
+    private String category;
+
+    private String source;
+
+    private String description;
+
+    private String firstChapterUrl;
+
+    public Book() {
+
+    }
 
     public String getName() {
         return name;
@@ -33,12 +49,12 @@ public class Book {
         this.name = name;
     }
 
-    public String getLinkPoster() {
-        return linkPoster;
+    public String getPoster() {
+        return poster;
     }
 
-    public void setLinkPoster(String linkPoster) {
-        this.linkPoster = linkPoster;
+    public void setPoster(String poster) {
+        this.poster = poster;
     }
 
     public String getUrl() {
@@ -95,5 +111,53 @@ public class Book {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public long getRatingCount() {
+        return ratingCount;
+    }
+
+    public void setRatingCount(long ratingCount) {
+        this.ratingCount = ratingCount;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getFirstChapterUrl() {
+        return firstChapterUrl;
+    }
+
+    public void setFirstChapterUrl(String firstChapterUrl) {
+        this.firstChapterUrl = firstChapterUrl;
     }
 }

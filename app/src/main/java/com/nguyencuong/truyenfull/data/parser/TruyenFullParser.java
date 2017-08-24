@@ -61,6 +61,30 @@ public class TruyenFullParser implements ParserInterface {
     }
 
     /**
+     * Load book info and list chapter;
+     *
+     * @param url link book;
+     * @param page pager chapter;
+     */
+    @Override
+    public void loadBookDocument(String url, int page) {
+        if (document == null || document.select("body#body_truyen").first() == null) {
+            try {
+                if (page > 1) {
+                    if (!url.substring(url.length() - 1).equalsIgnoreCase("/")) {
+                        url += "/";
+                    }
+                    url += "trang-" + page + "/";
+                }
+                document = Jsoup.connect(url).get();
+            } catch (IOException e) {
+                document = null;
+                //LogUtils.d(TAG, "Document is Null, Msg: " + e.getMessage());
+            }
+        }
+    }
+
+    /**
      * Get category in homepage;
      *
      * @return list {@link Category}
@@ -122,7 +146,7 @@ public class TruyenFullParser implements ParserInterface {
 
                     Element imgElement = element.select("img").first();
                     if (imgElement != null) {
-                        book.setLinkPoster(imgElement.attr("src"));
+                        book.setPoster(imgElement.attr("src"));
                     }
                     list.add(book);
                 }
@@ -185,7 +209,7 @@ public class TruyenFullParser implements ParserInterface {
 
                     Element imgElement = element.select("div.lazyimg").first();
                     if (imgElement != null) {
-                        book.setLinkPoster(imgElement.attr("data-image"));
+                        book.setPoster(imgElement.attr("data-image"));
                     }
 
                     book.setChapter(element.select(".caption > small").first().text());
@@ -236,7 +260,7 @@ public class TruyenFullParser implements ParserInterface {
 
                     Element coverElement = element.select("div.lazyimg").first();
                     if(coverElement != null) {
-                        book.setLinkPoster(coverElement.attr("data-image"));
+                        book.setPoster(coverElement.attr("data-image"));
                     }
 
                     Element subjectElement = element.select("h3.truyen-title a").first();
@@ -257,6 +281,75 @@ public class TruyenFullParser implements ParserInterface {
             e.printStackTrace();
         }
         return listBooks;
+    }
+
+    /**
+     * Get book info;
+     *
+     * @param url link page book info;
+     * @return The {@link Book}
+     */
+    @Override
+    public Book getBookInfo(String url) {
+        loadBookDocument(url, 0);
+
+        if (document != null) {
+            Book book = new Book();
+
+            Element infoDescElement = document.select("div.col-info-desc").first();
+
+            Element imgElement = infoDescElement.select("img").first();
+            if (imgElement != null) {
+                book.setPoster(imgElement.attr("src"));
+            }
+
+            Element titleElement = infoDescElement.select("h3.title").first();
+            if (titleElement != null) {
+                book.setName(titleElement.text());
+            }
+
+            Element infoElement = infoDescElement.select("div.info").first();
+
+            for (Element element : infoElement.select("div")) {
+                if (element.select("a").first() != null) {
+                    // Author or category
+                    if (element.select("a").first().attr("itemprop").equalsIgnoreCase("author")) {
+                        book.setAuthor(element.select("a").first().text());
+                    } else {
+                        book.setCategory(element.text().replace("Thể loại:", ""));
+                    }
+                } else if (element.select(".source").first() != null){
+                    book.setSource(element.select(".source").first().text());
+                } else if (element.select(".text-primary").first() != null){
+                    book.setFull(false);
+                } else if (element.select(".text-success").first() != null){
+                    book.setFull(true);
+                }
+            }
+
+            // rating
+            for (Element element : infoDescElement.select(".rate span")) {
+                if (element.attr("itemprop").equalsIgnoreCase("ratingValue")) {
+                    book.setRating(Double.parseDouble(element.text()));
+                } else if (element.attr("itemprop").equalsIgnoreCase("ratingCount")) {
+                    book.setRatingCount(Long.parseLong(element.text()));
+                }
+            }
+
+            Element descElement = infoDescElement.select(".desc-text").first();
+            if (descElement != null) {
+                book.setDescription(descElement.html());
+            }
+
+            Element firstchapElement = document.select("#list-chapter .list-chapter li a").first();
+            if (firstchapElement != null) {
+                book.setFirstChapterUrl(firstchapElement.attr("href"));
+            }
+
+            return book;
+        }
+
+        return null;
     }
 
     /**
@@ -328,4 +421,5 @@ public class TruyenFullParser implements ParserInterface {
 
         return new ArrayList<>();
     }
+
 }

@@ -46,4 +46,16 @@ public class TruyenFullParserTest {
         System.out.println("Result : " + result);
     }
 
+    @Test
+    public void getBookInfo() throws Exception {
+        String url = "http://truyenfull.vn/noi-yeu-em-99-lan/";
+
+        Book book = TruyenFullParser.getInstance().getBookInfo(url);
+        if (book == null) {
+            System.out.println("Book is null");
+        } else {
+            System.out.println("HomeBlocks : " + new Gson().toJson(book));
+        }
+    }
+
 }

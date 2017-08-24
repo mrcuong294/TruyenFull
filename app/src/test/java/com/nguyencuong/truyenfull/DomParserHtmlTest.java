@@ -39,7 +39,7 @@ public class DomParserHtmlTest {
                     book.setFull(element.select("span").first() != null);
                     Element imgElement = element.select("img").first();
                     if (imgElement != null) {
-                        book.setLinkPoster(imgElement.attr("src"));
+                        book.setPoster(imgElement.attr("src"));
                     }
 
                     System.out.println("-----\n" + new Gson().toJson(book));

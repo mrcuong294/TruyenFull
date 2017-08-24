@@ -21,6 +21,14 @@ public interface ParserInterface {
     void loadHomeDocument();
 
     /**
+     * Load book info and list chapter;
+     *
+     * @param url link book;
+     * @param page pager chapter;
+     */
+    void loadBookDocument(String url, int page);
+
+    /**
      * Get category in homepage;
      *
      * @return list {@link Category}
@@ -43,4 +51,13 @@ public interface ParserInterface {
      * @return The list {@link Book} book
      */
     ArrayList<Book> getListBook(String url, boolean isFull, int page);
+
+
+    /**
+     * Get book info;
+     *
+     * @param url link page book info;
+     * @return The {@link Book}
+     */
+    Book getBookInfo(String url);
 }
