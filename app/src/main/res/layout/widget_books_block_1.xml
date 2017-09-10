@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_8"
+    android:paddingBottom="@dimen/space_8"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_bar_bg"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:layout_gravity="center">
+
+    <TextView
+        style="@style/AppTheme.Text.Body.Bold"
+        android:id="@id/book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_toRightOf="@+id/item_widget_block_vg_label"
+        android:layout_toEndOf="@+id/item_widget_block_vg_label"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="Truyền thuyết Tru tiên thanh vân chí"/>
+
+    <TextView
+        style="@style/AppTheme.Text.Caption"
+        android:id="@id/book_ctg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_toRightOf="@+id/item_widget_block_vg_label"
+        android:layout_toEndOf="@+id/item_widget_block_vg_label"
+        android:layout_below="@id/book_name"
+        android:textColor="@color/text_light_2"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Ngôn Tình, Truyện Teen"/>
+
+    <TextView
+        style="@style/AppTheme.Text.Caption"
+        android:id="@id/book_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_toRightOf="@+id/item_widget_block_vg_label"
+        android:layout_toEndOf="@+id/item_widget_block_vg_label"
+        android:layout_below="@id/book_ctg"
+        android:textColor="@color/text_light_2"
+        android:textStyle="italic"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Chương 1200 | Cập nhật 59 phút trước"/>
+
+    <LinearLayout
+        android:id="@+id/item_widget_block_vg_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_gravity="right|end"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            style="@style/AppTheme.Text.Caption.Tiny"
+            android:id="@id/book_label_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="24dp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/space_4"
+            android:padding="@dimen/space_2"
+            android:background="@color/green50"
+            android:textColor="@color/text_light_1"
+            android:text="@string/book_label_full"/>
+
+        <TextView
+            style="@style/AppTheme.Text.Caption.Tiny"
+            android:id="@id/book_label_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="24dp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/space_4"
+            android:padding="@dimen/space_2"
+            android:background="@color/blue50"
+            android:textColor="@color/text_light_1"
+            android:text="@string/book_label_new"/>
+
+        <TextView
+            style="@style/AppTheme.Text.Caption.Tiny"
+            android:id="@id/book_label_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="24dp"
+            android:gravity="center"
+            android:padding="@dimen/space_2"
+            android:background="@color/red50"
+            android:textColor="@color/text_light_1"
+            android:text="@string/book_label_hot"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

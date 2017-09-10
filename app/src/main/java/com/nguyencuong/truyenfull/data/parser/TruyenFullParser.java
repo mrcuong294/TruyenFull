@@ -5,6 +5,8 @@ import com.nguyencuong.truyenfull.model.Block;
 import com.nguyencuong.truyenfull.model.Book;
 import com.nguyencuong.truyenfull.model.Category;
 import com.nguyencuong.truyenfull.model.Chapter;
+import com.nguyencuong.truyenfull.ui.activity.main.MainActivity;
+import com.nguyencuong.truyenfull.util.IntUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -114,7 +116,7 @@ public class TruyenFullParser implements ParserInterface {
     }
 
     /**
-     * Get home data, call in {@link com.nguyencuong.truyenfull.ui.home.HomeActivity};
+     * Get home data, call in {@link MainActivity};
      *
      * @return list {@link Block} home data;
      */
@@ -179,6 +181,8 @@ public class TruyenFullParser implements ParserInterface {
                     book.setHot(element.select("span.label-hot").first() != null);
                     book.setFull(element.select("span.label-full").first() != null);
 
+                    book.setCategory(element.select(".col-cat").first().text());
+
                     book.setChapter(element.select(".col-chap").first().text());
                     book.setTimeUpdate(element.select(".col-time").first().text());
                     list.add(book);
@@ -191,7 +195,7 @@ public class TruyenFullParser implements ParserInterface {
             Element fullElement = document.select("div.list-thumbnail").first();
             if(fullElement != null) {
                 Block blockFull = new Block();
-                blockFull.setStyle(BlockStyle.STYLE_2);
+                blockFull.setStyle(BlockStyle.STYLE_DEFAULT);
 
                 Element subjectElement = fullElement.select(".title-list > h2 > a").first();
                 blockFull.setTitle(subjectElement.text());
@@ -215,6 +219,7 @@ public class TruyenFullParser implements ParserInterface {
                     }
 
                     book.setChapter(element.select(".caption > small").first().text());
+                    book.setChapter(String.valueOf(IntUtils.convertStringToInt(book.getChapter())));
                     list.add(book);
                 }
                 blockFull.setListBooks(list);

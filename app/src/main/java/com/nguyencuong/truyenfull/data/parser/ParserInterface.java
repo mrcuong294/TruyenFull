@@ -4,6 +4,7 @@ import com.nguyencuong.truyenfull.model.Block;
 import com.nguyencuong.truyenfull.model.Book;
 import com.nguyencuong.truyenfull.model.Category;
 import com.nguyencuong.truyenfull.model.Chapter;
+import com.nguyencuong.truyenfull.ui.activity.main.MainActivity;
 
 import java.util.ArrayList;
 
@@ -36,7 +37,7 @@ public interface ParserInterface {
     ArrayList<Category> getHomeCategorys();
 
     /**
-     * Get home data, call in {@link com.nguyencuong.truyenfull.ui.home.HomeActivity};
+     * Get home data, call in {@link MainActivity};
      *
      * @return list {@link Block} home data;
      */

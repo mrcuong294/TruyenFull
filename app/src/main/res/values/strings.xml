@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">TruyenFull</string>
+
+    <string name="bottom_bar_text_home">Trang chủ</string>
+    <string name="bottom_bar_text_category">Danh mục</string>
+    <string name="bottom_bar_text_library">Thư viện</string>
+    <string name="bottom_bar_text_more">Thêm</string>
+    <string name="widget_books_block_action_view_more">Xem thêm</string>
+
+    <string name="book_label_full">Full</string>
+    <string name="book_label_new">New</string>
+    <string name="book_label_hot">Hot</string>
+    <string name="widget_books_block_item_grid_text_chapter">%1$s/%2$s</string>
+    <string name="dialog_text_loading">Đang tải&#8230;</string>
+    <string name="main_toolbar_action_search">Tìm kiếm...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -52,6 +52,7 @@ public class Book {
     }
 
     public String getName() {
+        if (name == null || name.length() == 0) return "No Name";
         return name;
     }
 

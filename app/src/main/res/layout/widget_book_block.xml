@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/space_8"
+    android:background="@color/bluGray800">
+
+    <TextView
+        style="@style/AppTheme.Text.Title"
+        android:id="@+id/widget_block_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/widget_block_tv_more"
+        android:layout_toStartOf="@+id/widget_block_tv_more"
+        android:drawablePadding="@dimen/space_8"
+        android:drawableLeft="@drawable/ds_widget_books_block_icon_title"
+        android:drawableStart="@drawable/ds_widget_books_block_icon_title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Mới cập nhật"/>
+
+    <TextView
+        style="@style/AppTheme.Text.Caption"
+        android:id="@+id/widget_block_tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8"
+        android:layout_alignBaseline="@+id/widget_block_tv_title"
+        android:layout_alignBottom="@+id/widget_block_tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textStyle="bold"
+        android:textColor="@color/green600"
+        android:text="@string/widget_books_block_action_view_more"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/widget_block_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_below="@+id/widget_block_tv_title"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_below="@+id/widget_block_recyclerview"
+        android:background="@color/divider_light"/>
+
+    <TextView
+        style="@style/AppTheme.Text.Caption"
+        android:id="@+id/widget_block_tv_more2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_4"
+        android:layout_marginBottom="@dimen/space_4"
+        android:padding="@dimen/space_8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/divider"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textStyle="bold"
+        android:textColor="@color/green600"
+        android:text="@string/widget_books_block_action_view_more"/>
+
+
+</RelativeLayout>

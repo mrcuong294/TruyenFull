@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="bluGray700">#455A64</color>
+    <color name="bluGray800">#37474F</color>
+    <color name="bluGray900">#263238</color>
+    
+    <color name="green600">#8BC34A</color>
+    <color name="green500">#8BC34A</color>
+
+    <color name="text_dark_1">#de000000</color>
+    <color name="text_dark_2">#8a000000</color>
+    <color name="text_dark_3">#61000000</color>
+
+    <color name="text_light_1">#ffffff</color>
+    <color name="text_light_2">#b2ffffff</color>
+    <color name="text_light_3">#7fffffff</color>
+
+    <color name="divider_light">#1effffff</color>
+    <color name="divider_dark">#1e000000</color>
+    <color name="transparent_dark">#00000000</color>
+    <color name="transparent_light">#00ffffff</color>
+
+
+
+    <color name="black50">#7e000000</color>
+
+    <color name="red50">#7ecc0000</color>
+
+    <color name="blue50">#7e01579B</color>
+
+    <color name="green50">#7e558B2F</color>
+
 </resources>

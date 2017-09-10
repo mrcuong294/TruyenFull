@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionBarSize"
+    android:layout_gravity="bottom"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:background="@drawable/bottom_bar_bg"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/bottom_bar_text_home"
+            android:tint="@color/bluGray700"
+            android:src="@drawable/ic_bottom_bar_home" />
+
+        <TextView
+            style="@style/BottomBar.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="4dp"
+            android:text="@string/bottom_bar_text_home"
+            android:textColor="@color/bluGray700" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:alpha="0.67">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/bottom_bar_text_category"
+            android:src="@drawable/ic_bottom_bar_category" />
+
+        <TextView
+            style="@style/BottomBar.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="4dp"
+            android:text="@string/bottom_bar_text_category"
+            android:textColor="@color/text_light_1" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:alpha="0.6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/bottom_bar_text_library"
+            android:src="@drawable/ic_bottom_bar_libs" />
+
+        <TextView
+            style="@style/BottomBar.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="4dp"
+            android:text="@string/bottom_bar_text_library"
+            android:textColor="@color/text_light_1" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionBarSize"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:alpha="0.6">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/bottom_bar_text_more"
+            android:src="@drawable/ic_bottom_bar_more" />
+
+        <TextView
+            style="@style/BottomBar.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="4dp"
+            android:text="@string/bottom_bar_text_more"
+            android:textColor="@color/text_light_1" />
+
+    </FrameLayout>
+
+</LinearLayout>

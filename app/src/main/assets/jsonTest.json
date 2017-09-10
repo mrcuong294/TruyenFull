@@ -1,13 +1,573 @@
-{
-  "name": "Nói Yêu Em 99 Lần",
-  "author": "Diệp Phi Dạ",
-  "isFull": true,
-  "isHot": false,
-  "isNew": false,
-  "linkPoster": "http://static.truyenfull.vn/cover/o/eJzLyTDW13VOzfDPNPUwznAO1Q8zyA20jErL8jXx1HeEAn-jdP2CSncnj-wwxwLj9PRKb5NgY_8Cd4PCfOPwSuNgD7-Q5HRn53z9ciNDU90MYyMjAIM0Gic\u003d/noi-yeu-em-99-lan.jpg",
-  "rating": 8.1,
-  "ratingCount": 65,
-  "category": "Ngôn Tình, Hài Hước",
-  "source": "DĐ Lê Quý Đôn",
-  "description": "\u003cb\u003e\u003ci\u003eSố chương:\u003c/i\u003e\u003c/b\u003e\n\u003ci\u003e bản raw 1092 (đang cập nhật...)\u003c/i\u003e\n\u003cbr\u003e\n\u003cb\u003e\u003ci\u003eEditor:\u003c/i\u003e\u003c/b\u003e\n\u003ci\u003e Tuyết Hân\u003c/i\u003e\n\u003cbr\u003e\n\u003cspan\u003e\u003cb\u003e\u003ci\u003eNguồn convert:\u003c/i\u003e\u003c/b\u003e\u003ci\u003e yingcv\u003cbr\u003e\u003cbr\u003e\u003c/i\u003e\u003c/span\u003eLúc anh đến nhà cô ngủ nhờ, không cẩn thận còn mượn thân thể của cô ngủ một đêm.\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n\u003cbr\u003e\n\u003cbr\u003eTừ đó về sau, cô liền bị anh dây dưa tới.\u0026nbsp;\n\u003cbr\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n\u003cbr\u003eTrước khi cưới, cô dùng mọi cách để bức hôn anh, sau khi cưới, cô nghĩ mọi cách làm thế nào để ly hôn với anh.\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n\u003cbr\u003e\n\u003cbr\u003e\"Nam thần, tôi không cưới! Không cưới! Không cưới!\" Cuối cùng khi cô\u0026nbsp;nóichuyện quan trọng ba\u0026nbsp;lần, anh dứt khoát ném cho cô một tờ giấy thỏa thuận ly hôn.\u0026nbsp;\u0026nbsp;\n\u003cbr\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n\u003cbr\u003eVốn tưởng rằng cuối cùng cũng được giải thoát, nhưng không nghĩ rằng... Sau khi ly hôn, lúc nào anh cũng tiến vào phòng của cô, quấn lên người cô... Cô rốt cục không thể nhịn được nữa hét lên: \"Chúng ta đã ly hôn!\"\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n\u003cbr\u003e\n\u003cbr\u003eAnh bình tĩnh liếc mắt nhìn cô một cái, đem\u0026nbsp;giấy thỏa thuận ly hôn ném đến trước mặt cô, phía trên ghi rõ ràng là: Xe thuộc về cô, nhà thuộc về cô, công ty thuộc về cô, con cái thuộc về cô, anh... cũng thuộc về cô?\n\u003ci\u003e\u003cbr\u003e\u003c/i\u003e"
-}
+[
+  {
+    "style": 0,
+    "title": "Truyện hot",
+    "url": "http://truyenfull.vn/danh-sach/truyen-hot/",
+    "listBooks": [
+      {
+        "name": "Chọc Tức Vợ Yêu - Mua Một Tặng Một",
+        "url": "http://truyenfull.vn/truyen-choc-tuc-vo-yeu-mua-mot-tang-mot/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwN0UkWY0AAANAT1euYCoteSAxBgpjZeGaiDEWMp-_-V_ioof7w1LHHXn2xD381U46Lal5razGL4MU3AKcNL7LrcgrcQ0bi8xPrYBZv7aqJksgazmTJE9L1CTHG4GJHesfVkeUYY6txfZbdyL2we0KlOhAJrOw3HXXWpmpfj-1GmslHe8nLBwt-qqeC5U3qLakc_Uj2R2nl2eHqsVuUe1H5R0FJiMHOnq6NHC6URnXLMWfKEtktJvux3yHxOtyP8DV083nYmpqm9BVrxhJVGswuknciIHy8pMqjhYmGr-dXRRf6kFHkrmU7fYfzoKCjvrv71uK4eK8_00kLZSKDGUSq_vb97hfutjMGT-xcabCkesX9XKXya5k9zseIsKri2dqWULRr0Zu_0MJzx63HZFnaqxW4F_2thhpcgColyQzY0-Xcqj6yLlkPskSEKb5HEJchWj8lk2HYsy0v0Vf7bfDNSNWYZy2Cdr034Rw0Y8BLU7P-ak8COcSeBfIkQSLITTND1HN6pafyMJheqe_SWMHxVi7Jdb8DOMRSZBWRM0Csh6owXHYJaCc_GmPaS2JH5vDKqyiywfl_Dgm8-AalIENh7r-xLALLmLASwgKIUCKL20wdDbeNfr151zdwP_Hi7Gf0g5X9mkkBtsgc1zwORK20QHgyA4jfZ9DMPD-3VjIWd5gLHj3c6a2aH_aCfj8tlaUntfJYKqe43BIkDjV02KWne42N_u4kZEBD8fAfuujspQ\u003d\u003d/truyen-choc-tuc-vo-yeu-mua-mot-tang-mot.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Linh Vũ Thiên Hạ",
+        "url": "http://truyenfull.vn/linh-vu-thien-ha/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW160wTC70dXI0zAnO1g9LL0gpsAz0CA_x1HeEAqckR31jj0A_n_Jg8ygXC_1yQyNL3QxDSyNdz2QTIwCufBM8/linh-vu-thien-ha.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Boss Hung Dữ - Ông Xã Kết Hôn Đi",
+        "url": "http://truyenfull.vn/boss-hung-du-ong-xa-ket-hon-di/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwFwceWbEAAANAvcl7LbfEWI7ZqObNxaK2kYkrm6-feoaH_bcRbvnRygI9rC28bw0yk0xkkmxMBipd7YtL5g7VfX_9-js-oyRn0puwk2UqXw-WwWZHjwYWABPOVt46tDzWN8h3zwrVk18YJazmFiJseNoi8nqzLzzxh0lIoAAu1qIM44AfC1yIVTgxgPqIm7aXA37y3iEDSX-EZDR10nTqLc4i01tSwovWhn1fUyRoflT2afniiU8yLN1KS9VZGTM20mxxQ4h2SsrGwuYKj6z-oo4_Au9IzoLuGnYvmTVg9hA3NriLFTjls3dGPTkvwGFBNh46PB_17gHszrMHfvwm7OXFoJ4xGBFXGz-LoNmDSPVVeRWYgeZXBenwCHTILcINMQDGiVsNZVv39GJlhfCEZcfXPdqxZGVpVh3sz7t250KRy_wjrEX-xg7JB2IsT8UWr4I8XIU9MCiqeHrcaIfYnD6ZGF-77xGE1I_vk5SLTpBaO1d7T7k5FYkTiZzfTTpDXTTDMF-MZRcTmmFhGm_NlQHFIbDnCJItUZmMUt5XEX8fFhW5om0s2ntj4MnzWaP7Y9wYsLAsTv5a4pwPZtJ6jV9-jU9D7M2hNiSlaZnxCN-n6FAvcmgM-hTpMlw0878rIL6COpuG8hGaan8BzNMYRQWjzVh3Nx5m8Js_tjlySO32NLEfxQxDAwXnVbvbmstOSzLKklyRMUkFMzWovxir9f5CUQDSkQP0BizjsmQ\u003d\u003d/boss-hung-du-ong-xa-ket-hon-di.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Vạn Cổ Chí Tôn",
+        "url": "http://truyenfull.vn/van-co-chi-ton/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1y2yMM0P9nSxKCo30Q9LjTLK8_P3i6jw1HeEgQxP_UTLSOf4KAM_Iw9P_XJDI0vdDENLI13PZBMjAKN4Ewk\u003d/van-co-chi-ton.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Thần Khống Thiên Hạ",
+        "url": "http://truyenfull.vn/truyen-than-khong-thien-ha/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1zXLr0ot8zOMcjRx1Q_zCywrzogPLTT11HeEghzzSH3X0iL_JHPfRPPwQP1yQyNL3QxDSyMAWtUSfw\u003d\u003d/truyen-than-khong-thien-ha.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Đại Chúa Tể",
+        "url": "http://truyenfull.vn/dai-chua-te/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDR1_Xy0S3MMy4rM07J1w9z8nUxdk1Jd3f31HeEgmzvcn33jMrwfH_TyiyLSP1yQyNL3QxDSyMAUaYSig\u003d\u003d/dai-chua-te.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Nữ Nhân Sau Lưng Đế Quốc: Thiên Tài Tiểu Vương Phi",
+        "url": "http://truyenfull.vn/nu-nhan-sau-lung-de-quoc-thien-tai-tieu-vuong-phi/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW143y9PDxLrHMcC0O1A8LDvAOyQlzMk731HeEgtxwV_1iA-Os9KIK7wjHYv1yQyNL3QxDSyMAT_gSfA\u003d\u003d/nu-nhan-sau-lung-de-quoc-thien-tai-tieu-vuong-phi.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Đế Bá",
+        "url": "http://truyenfull.vn/de-ba/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDR183KzSo2TCpOCXKJ1A8LKEiucHN3yor31HeEglzXZP0qM-fg-IA8QxODQP1yQyNL3QxDSyMAbhYSqg\u003d\u003d/de-ba.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Ép Yêu 100 Ngày (Mạnh Mẽ Yêu Nhau 100 Ngày)",
+        "url": "http://truyenfull.vn/ep-yeu-100-ngay-manh-me-yeu-nhau-100-ngay/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwNz0cWojAAANAT5Q1F2mIW9I4EiJQNT0SD0qQYyuln_g1-17B_pmeLCvvJmXJsQ_wLqUFQfUB8j9Q0pGIBNuue81g4tLj6ho_U6PRCydZnGEBGaDhtSVn_bLCl5JC75_TPThJtfZsHKV8KqpVX0LEyztEWSa34uZ42uPUA4vMs_MPiHHGssjfCO2ecgTFduSPZL0ucEYTn-UZmHHeV41zOGEUGaXtEvX9rhHjceRd7Z1SVoXYPDanokv6gxArAswXJKXUbekXz6n2SmCv8PDfOX7VIuYmqpIhmAhiXD4hiV1KTzEvWmUwYfTI0jgfv6y7vX7HTWd0mDzEmtpCXFpwXuUpIMv1e6jy003wQ2buzruW5C2aPLlFHzMGenZ3gc22GSaITN-0q1Gyfo45QxxNj6RPvlgbVqpuQyge6HXY11r_aw14Cly7trQNSrbGTeqyJJfcwxebn6cyYtsb1p164ppD4S0DXXm4-om9WuSqmIseGflkHLffQlRfRdBa0I9ht0KbyAhk36Ie-Zve7U8ovg0yx79aO7gMfST_-XTt-0KEazHRxM-7ryFgZ3mJnj5O12sRnIY9UyOz53HvKQ9oK5hg3kXpqiGuZslSJ3Lf2ojN4eZUh5KlSpCPVdIGqPMKHxmIPc4IDAvI_O86tIG5PRwjOj6bCt_x3oxkJNLTE_AMoSdbS/ep-yeu-100-ngay-manh-me-yeu-nhau-100-ngay.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Vương Phi Của Bạo Vương",
+        "url": "http://truyenfull.vn/vuong-phi-cua-bao-vuong/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwNz0kWY0AAANATeY0yxKIXYp4TxJCNRwklMZQKMZy--wb_9wj8YdWzrdeA-g0kXrRPPmw8zzUPE0h9e9bqHU1TgYSTaINHMCwCh-6Sc55DofbLdwVBvoiuM9bHWkbtfQRFPAAk5Y2ZuvYsAKInvkHFe9ZCc6dp5cjFaDSG4Ed0s7NwfzblNxRlsat20tVn9JGsaK3THezjcgSrYSUwhCcSd1BkCnX7Xb9skZjpIlGP8x2dZkZrBuD7F7FFndtNNnkdNW2rdZPoSsbno9WOzXNEwQB5Ds9BUXXx9LaH_8BSuONG4g7Wu75Y-NqW9VLQllYb5FbVNzMllEwa1S9oF7tXW_3dhGrHu0oOJszM-m70Pr1_RbXVMVQBmc5z7Xn7dMpSc9uogv6nb531sCmHEW0l27AuR9kmDIIJH6ZUUzxLiilGqgEz6ij6Y3ywMaB54bh5sNPS89Ltiqq4SIjWYcZyVAF_SfEjjuwXxqXUPJ_B7l1U31kqDx2HSXfYHCqqK7iD_4wPn0B_sL5MFQj-fImNrgoZGamc4jG0Uvu_UaTmiblhPW8MohMnkVD4gUvbKMZzpEtmAMsYBq4MMknl4QDc3TtGPtYma8v8OEjfzhpXScdZkvIVJrw2BTEn52rz6PrKm63vKLZtt_9JmRq2cv1xM49K60mFSGSu8O_GsBKFGIn9B5LD2W8\u003d/vuong-phi-cua-bao-vuong.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Boss Là Nữ Phụ",
+        "url": "http://truyenfull.vn/boss-la-nu-phu/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW163KNDJ0NU-MCC6O1A8rLE0KKndzCzT31HeEAi8jE_2obF_D0iSv0uAkA_1yQyNL3QxDSyNdz2QTIwCwNBN3/boss-la-nu-phu.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Phàm Nhân Tu Tiên",
+        "url": "http://truyenfull.vn/pham-nhan-tu-tien/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDT17WITwqMNNQtNKp01A_zNXY1ifQuc8301HeEghwTR_1IV8PsTO-w4HKTUP1yQyNL3QxDSyMANTcRpQ\u003d\u003d/pham-nhan-tu-tien.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Ngã Dục Phong Thiên",
+        "url": "http://truyenfull.vn/nga-duc-phong-thien/",
+        "isFull": true,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW180wN3Yu8U9Ns3DK1w9LNM2vyk10TYvw1HeEgvx8E_2sSrNAH7NSryKXSP1yQyNL3QxDSyNdz2QTIwC9hBPy/nga-duc-phong-thien.jpg",
+        "rating": 0.0,
+        "ratingCount": 0
+      }
+    ]
+  },
+  {
+    "style": 1,
+    "title": "Truyện mới cập nhật",
+    "url": "http://truyenfull.vn/danh-sach/truyen-moi/",
+    "listBooks": [
+      {
+        "name": "Quang Minh Giáo Đình tại Tu Chân Thế Giới (Quang Minh Thánh Thổ)",
+        "url": "http://truyenfull.vn/quang-minh-giao-dinh-tai-tu-chan-the-gioi-quang-minh-thanh-tho/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 160",
+        "timeUpdate": "15 phút trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Tiên Hiệp, Huyền Huyễn"
+      },
+      {
+        "name": "Ngày Mẹ Đánh Tổng Tài",
+        "url": "http://truyenfull.vn/ngay-me-danh-tong-tai/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 48",
+        "timeUpdate": "27 phút trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình"
+      },
+      {
+        "name": "Ti Trà Hoàng Hậu: Bệ Hạ, Xin Hạ Hỏa",
+        "url": "http://truyenfull.vn/ti-tra-hoang-hau-be-ha-xin-ha-hoa/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 106",
+        "timeUpdate": "58 phút trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Ngược"
+      },
+      {
+        "name": "Xin Hãy Đặt Cạnh Anh Ấy Một Tiêu Dật",
+        "url": "http://truyenfull.vn/xin-hay-dat-canh-anh-ay-mot-tieu-dat/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 49",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Đam Mỹ"
+      },
+      {
+        "name": "Quốc Sắc Sinh Hương",
+        "url": "http://truyenfull.vn/quoc-sac-sinh-huong/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 17",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Sủng"
+      },
+      {
+        "name": "Mau Xuyên Công Lược: Nữ Phụ Có Độc",
+        "url": "http://truyenfull.vn/truyen-mau-xuyen-cong-luoc-nu-phu-co-doc/",
+        "isFull": false,
+        "isHot": true,
+        "isNew": false,
+        "chapter": "Chương 230",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Khoa Huyễn"
+      },
+      {
+        "name": "Nhật Ký Theo Đuổi Vợ Của Chàng Đầu Bếp",
+        "url": "http://truyenfull.vn/nhat-ky-theo-duoi-vo-cua-chang-dau-bep/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 59",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Sủng"
+      },
+      {
+        "name": "Long Huyết Chiến Thần",
+        "url": "http://truyenfull.vn/long-huyet-chien-than/",
+        "isFull": false,
+        "isHot": true,
+        "isNew": false,
+        "chapter": "Chương 867",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Tiên Hiệp, Huyền Huyễn"
+      },
+      {
+        "name": "Sủng Hậu Tìm Chết Hàng Ngày",
+        "url": "http://truyenfull.vn/sung-hau-tim-chet-hang-ngay/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 149",
+        "timeUpdate": "1 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Trọng Sinh"
+      },
+      {
+        "name": "Cố Tiên Sinh Thân Mến",
+        "url": "http://truyenfull.vn/co-tien-sinh-than-men/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 64",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình"
+      },
+      {
+        "name": "Cuộc Sống Ở Đông Cung Của Tần Xu",
+        "url": "http://truyenfull.vn/cuoc-song-o-dong-cung-cua-tan-xu/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 14",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Cung Đấu"
+      },
+      {
+        "name": "Xuyên Qua Làm Chủ Một Gia Đình",
+        "url": "http://truyenfull.vn/xuyen-qua-lam-chu-mot-gia-dinh/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": true,
+        "chapter": "Chương 7",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Xuyên Không"
+      },
+      {
+        "name": "Này Nhóc, Tôi Không Phải Vợ Cậu",
+        "url": "http://truyenfull.vn/nay-nhoc-toi-khong-phai-vo-cau/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 10",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Truyện Teen"
+      },
+      {
+        "name": "Một Ngoan, Hai Mất Việc, Cho Em Chọn",
+        "url": "http://truyenfull.vn/mot-ngoan-hai-mat-viec-cho-em-chon/",
+        "isFull": false,
+        "isHot": true,
+        "isNew": false,
+        "chapter": "Chương 51",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Truyện Teen"
+      },
+      {
+        "name": "Bé Con Của Tổng Giám Đốc Phúc Hắc",
+        "url": "http://truyenfull.vn/be-con-cua-tong-giam-doc-phuc-hac/",
+        "isFull": false,
+        "isHot": true,
+        "isNew": false,
+        "chapter": "Chương 1",
+        "timeUpdate": "2 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Truyện Teen"
+      },
+      {
+        "name": "Vân Thi Ca Em Là Của Tôi",
+        "url": "http://truyenfull.vn/van-thi-ca-em-la-cua-toi/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": true,
+        "chapter": "Chương 6",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Truyện Teen"
+      },
+      {
+        "name": "Chính Cung Tiểu Thiếp",
+        "url": "http://truyenfull.vn/chinh-cung-tieu-thiep/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 1-2",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Sủng"
+      },
+      {
+        "name": "Cá Nhỏ Ăn Lươn Lớn",
+        "url": "http://truyenfull.vn/ca-nho-an-luon-lon/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 2",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Huyền Huyễn"
+      },
+      {
+        "name": "Yêu Em Hơn Tất Cả Những Gì Anh Có",
+        "url": "http://truyenfull.vn/yeu-em-hon-tat-ca-nhung-gi-anh-co/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 71",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Sắc"
+      },
+      {
+        "name": "Làm Lại Cuộc Đời Nữ Phụ",
+        "url": "http://truyenfull.vn/lam-lai-cuoc-doi-nu-phu/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 7",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Dị Năng"
+      },
+      {
+        "name": "Phù Dung",
+        "url": "http://truyenfull.vn/phu-dung/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 28",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Trọng Sinh"
+      },
+      {
+        "name": "Thê Bằng Phu Quý",
+        "url": "http://truyenfull.vn/the-bang-phu-quy/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 4",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Xuyên Không"
+      },
+      {
+        "name": "Góa Phụ Đen",
+        "url": "http://truyenfull.vn/goa-phu-den/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 7",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Nữ Cường"
+      },
+      {
+        "name": "Đồng Giá Trao Đổi Bán Đứng Giao Dịch",
+        "url": "http://truyenfull.vn/dong-gia-trao-doi-ban-dung-giao-dich/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "chapter": "Chương 285",
+        "timeUpdate": "3 giờ trước",
+        "rating": 0.0,
+        "ratingCount": 0,
+        "category": "Ngôn Tình, Sắc"
+      }
+    ]
+  },
+  {
+    "style": 0,
+    "title": "Truyện đã hoàn thành",
+    "url": "http://truyenfull.vn/danh-sach/truyen-full/",
+    "listBooks": [
+      {
+        "name": "Thiên Hạ Võ Trạng Nguyên",
+        "url": "http://truyenfull.vn/thien-ha-vo-trang-nguyen/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwFwdfWc0oAANAnyjomol2cC6NHL4PkxtI-ZZCIMnj6f--hpf-TaT1jGEOWgljrrLgAJ1E0hY943tDYwClC0U2dpbb13TSwGqZV568ETwNVprK_F0GuJvINnsW1tQAGEB-SK8B6BdCh0XI6wRcU7MY1VVWXe_hBWoVvikd6uWtK0RqxbTJ_iYvMXIox7_JpldRB0EKpnSNt42iN40Erdm1r5uT8DsKVdhRXw4ZqikpdtNACQjUaSi9M89FOfBXv88lydUUxb5oX69US_HeLwz2pZlsS9t5DJe9GIHuvzPByU4hcyMIPe72pZskvTljG8_KHFLfPChefcbVlEMWfKB-VvCiheVelBV_7yxUzkwSM0u7DywBQe959KvmTmXvZs73lmxMJHWszRZs87MQcp6uK5h_iFFIQ0UW3KlB_dI4bVt9AnbqPDetIGqj0eKsP51B0kuHbsxgjTefkaGFJ65lm3TiWJwRL3H0B91qZF2bnbKh-n1Nl0OFiLlsF8HG8Vck3sB3BvEmSbEXMz4pwKXaNTpgfQvtDRXUzGLJoqH65he4IdzFnAwizmnk_T1_XWg-mPnBi5Z5fed_J380IRIRRQnluOfGUcqfOck5EoWLmH0Flehv_DvKyWk_P8vT7ZulSeVj27YptffY96XsYMCZu3xmhd363h-HLnkkTHhxdkz8jJIFJylTamnMw7mAFPKyeoHE1ZRsnKX8x6WO1o966zuZ_AgBzawHL_QPKPujD/thien-ha-vo-trang-nguyen.jpg",
+        "chapter": "24",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Tiểu Thư Siêu Quậy",
+        "url": "http://truyenfull.vn/tieu-thu-sieu-quay/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJzLyTDWTwrwLS0NqQryT86rzIyM98vJL08pivTKNC3yzyhMsnDOi6isNHV1zgkrLgqpCNc1iMoIyTSx9I7PzTfJKwt1zwgwD9RNKXEvqwwocitIty03NDTVzTA0MwcA_a8fwg\u003d\u003d/tieu-thu-sieu-quay.jpg",
+        "chapter": "64",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Đại Minh Giang Hồ Trạch Nữ Ký",
+        "url": "http://truyenfull.vn/dai-minh-giang-ho-trach-nu-ky/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1zV39yhPc86qqPR01A_LDvfIKMkKjTLx1HeEApeAUH3jgLSI5Eq_ZEtvT_1yQ0NT3QxDM3Ndz2QTIwC_FBPJ/dai-minh-giang-ho-trach-nu-ky.jpg",
+        "chapter": "30",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Đại Thúc Ngộ Thượng Lang",
+        "url": "http://truyenfull.vn/dai-thuc-ngo-thuong-lang/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1w1w9DIOzg53NYwM1A8rLI3wrgoKLA7x1HeEAi8jE_2c8DLdUN1ww8TCbP1yQ0NT3QxDM3Ndz2QTIwCmKxNU/dai-thuc-ngo-thuong-lang.jpg",
+        "chapter": "319",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Tẩy Oan Tập Lục 《Sai Gả Tàn Nhan Hệ Liệt》",
+        "url": "http://truyenfull.vn/tay-oan-tap-luc-sai-ga-tan-nhan-he-liet/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1w3yyS9JC0uJMPUO1Q_LdQtKq8oOq_T21HeEAtekSP2QyMiovEjTUt3EQP1yQ0NT3QxDM3Ndz2QTIwDO4BQv/tay-oan-tap-luc-sai-ga-tan-nhan-he-liet.jpg",
+        "chapter": "111",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Hồ Ly Truyện",
+        "url": "http://truyenfull.vn/ho-ly-truyen/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1w3OyciqDND18XZL1g8rzSt3SSpNqTTw1HeEAt-IbH3_rEqfMNfytPTQ_HA398Ks8jDf0DyzPC_PvIKgqgrdiEBn53z9ckNDU90MQzNzXc9kEyMAfd8dgQ\u003d\u003d/ho-ly-truyen.jpg",
+        "chapter": "28",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Juliet",
+        "url": "http://truyenfull.vn/juliet/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1_U3KrAsd0o0sbAo1g8rD0k3SItMM_D01HeEAj__bP2wsqIyY7-8Qgtj16qswvRcf6e0eNeMoMhcMxfPjAz_4EBn53z9ckNDU90MQzNzXc9kEyMAKskcLQ\u003d\u003d/juliet.jpg",
+        "chapter": "10",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Tình Sử Bi Thương Của Một Nàng Phượng Hoàng",
+        "url": "http://truyenfull.vn/tinh-su-bi-thuong-cua-mot-nang-phuong-hoang/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1_ULKHWJLzSMcC701Q8rjaowC3cMijT11HeEAl__bH0Pn5wy3cjiAC_fSMcqz_h8k9Rgp-SysOIMnzIXM0_dknJn53z9ckNDU90MQzNzXc9kEyMANbIcPw\u003d\u003d/tinh-su-bi-thuong-cua-mot-nang-phuong-hoang.jpg",
+        "chapter": "61",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Quyền Lực Tuyệt Đối",
+        "url": "http://truyenfull.vn/quyen-luc-tuyet-doi/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDR1zXSzU7NtywPzXL01A_zSq8qC_NONfbz1HeEgpy0UP0sI8skr5JMP7MAE_1yQ0NT3QxDM3MAVgcSVQ\u003d\u003d/quyen-luc-tuyet-doi.jpg",
+        "chapter": "878",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Duyên Sinh",
+        "url": "http://truyenfull.vn/duyen-sinh/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwFwce2a1AAANAvsp6jG7wBooveYmJFj3L0kPP1d--xI_-dCxHGDIKyMjMXzPvW_-i1Go4s2qvv96J27rm7JXVror2XiZ6KOJFQcmK6SQrbYdUmoTVKwxSKTcLqyQsUv1bFraCcihrAGcFTpmfUdUjsaPoLD1GVNmXGC4kycDUeOkd_q6gIpcgKA4n1OHhiAYNEMxa-Q2hjniVz73KLHud4qege0jwxnhF5gRQcFd_-kAXHW8LPsDErPMNYBsa4b7IYgW-lcHVgTMwLDcDQTakCkW-zlnucgXNluqnPNjD2tepfljC_SfJX3x9LP_PuvXQ9JjQvPBPE6qc9jCb7Cd5QqQesYi99iQCMmfYLHU7oRlX2VnOpKWbCEi2bXJIT3Aq-kKdqXdxTbx5jFJGAqarQhqKPkKJUqeoGuWhap-B9Umo8Tm4-AUxAOTioh8-o3mjidrnSe-rihiwL-ZgSxsd8-Cq8LF-reVS8b8V_RI5pL458nvBIh0i0QWQrvYgg_ILqS1eVdjTcR9Ej2Kgw0Y_sMerknvdliiWF_jpL3AcBJ9VWvZ1GzYMsDdcpvhN1Wj0a0cWq0ANV0BdTXzdreTvIP8HD2y5xatfoA2d-BksOBnBVOfEe3NN_snxy2bLDgulgB7cTXqn2mOgiZLUoqFtChrHfP4-9N7DtUdck0VFlG_Ld07uNsTCjLTdwK1pCgVgMtqSlTKX4eL11glsq4wzx_xcANNYBhv0DOSDozQ\u003d\u003d/duyen-sinh.jpg",
+        "chapter": "1",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Lăng Hề",
+        "url": "http://truyenfull.vn/lang-he/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/eJwFwUm2a0AAANAV5XwEYfAH-iaii4owcfRFiZ7C6t-9Hbz_k6rvIOtP_pJwg4YmrZB-k0dKKhCkahNxrV-Ll17eE5o6R7YKrFf3U0uIfvJCiMlXUlexV3vkhtwvStUhhK9zfAm6pLHmmiTibQVMH7xmyhBXJGX41BJP1cCDcp7Bj5rYt-KDOX_iI2Soyz5yjdUCp4pClzahmXnyfbFHS2QZb96wkFj4K0iPOtRZoasmsPvSxXddNByKMlFe4kh7sxb93LTrEIqYFp_quRcXInZjfwVne4BbNS44uRmqMikhSkZ8WMGcUa2o-fYMaSvpJj89Y0nkB-wT1cxP8mEqV2moTQEER7Hic6nJNM6SpCrfAgwLOreyIkuNMCo6Q7QzhWN_W5Vq6SD5Aw67T1xEy4S61dQDPT9T6ZdzMed7j7GHH9EzHquVXQRq1A7R3-MiYA1enHsLm3aJV-R63XFlwuB-pt1l3cW2H07UEbH-pKSeMMBW9zTNRylce-fyWkpRqgdOJ1l5mr6YntTm8Iu89OZIlEXJiO8N0OGXILXWyw80vUEC5iP_NMQ9CjzDZJpTO9kd9xAuB6pBUfc3lzsT-vs17lFufoZgKzGUkmaAn4KmhQ-TkW3iYc1vTMMCJahZotVqgHG4MC8eBbBf39XWwS2oqcnaUcs7_QaeZJcS7sf-FXFEfpsJtxlHCoLNl3Jn6R69AdDGYXaf-ZKG1iIWhszlB_0fkyRzgyT7-AN6ne7e/lang-he.jpg",
+        "chapter": "25",
+        "rating": 0.0,
+        "ratingCount": 0
+      },
+      {
+        "name": "Công Chúa, Thất Lễ Nàng A",
+        "url": "http://truyenfull.vn/cong-chua-that-le-nang-a/",
+        "isFull": false,
+        "isHot": false,
+        "isNew": false,
+        "poster": "http://static.truyenfull.vn/cover/o/eJzLyTDW1w00S8uutNS19M701A8rScvQDTB2y4jw1HeEAp_MfP3MeH83t-zQIt20Yv1yQ0NT3QxDM3Ndz2QTIwCsShOr/cong-chua-that-le-nang-a.jpg",
+        "chapter": "12",
+        "rating": 0.0,
+        "ratingCount": 0
+      }
+    ]
+  }
+]

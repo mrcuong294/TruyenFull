@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="book_poster" />
+    <item type="id" name="book_name" />
+    <item type="id" name="book_chapter" />
+    <item type="id" name="book_ctg" />
+    <item type="id" name="book_time_update" />
+    <item type="id" name="book_label_full" />
+    <item type="id" name="book_label_new" />
+    <item type="id" name="book_label_hot" />
+</resources>
