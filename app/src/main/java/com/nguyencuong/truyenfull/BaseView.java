@@ -9,9 +9,7 @@ import android.support.annotation.StringRes;
  * Email: vancuong2941989@gmail.com
  */
 
-public interface BaseContractView<T> {
-
-    void setPresenter(T Presenter);
+public interface BaseView {
 
     void showLoading(boolean show);
 

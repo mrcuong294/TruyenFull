@@ -14,17 +14,20 @@ import android.widget.Spinner;
 
 import com.nguyencuong.truyenfull.BaseActivity;
 import com.nguyencuong.truyenfull.R;
+import com.nguyencuong.truyenfull.constance.DataSources;
+import com.nguyencuong.truyenfull.eventbus.ChangeDataSourceEventBus;
 import com.nguyencuong.truyenfull.ui.fragment.mainctg.CategoryFragment;
 import com.nguyencuong.truyenfull.ui.fragment.mainhome.HomeFragment;
 import com.nguyencuong.truyenfull.ui.fragment.mainlibs.LibraryFragment;
 import com.nguyencuong.truyenfull.ui.fragment.mainmore.MoreInfoFragment;
 import com.nguyencuong.truyenfull.widget.BottomBar;
 
-public class MainActivity extends BaseActivity implements BottomBar.Listener, AdapterView.OnItemSelectedListener {
+import org.greenrobot.eventbus.EventBus;
+
+public class MainActivity extends BaseActivity implements BottomBar.Listener, AdapterView.OnItemSelectedListener, FragmentManager.OnBackStackChangedListener {
 
     private static String[] arraySources = {"TruyenFull.vn", "sstruyen.com", "Truyenyy.com"};
 
-    private Toolbar toolbar;
     private Spinner spinner;
     private BottomBar bottomBar;
 
@@ -55,17 +58,7 @@ public class MainActivity extends BaseActivity implements BottomBar.Listener, Ad
 
         replaceFragment(new HomeFragment());
 
-        getSupportFragmentManager().addOnBackStackChangedListener(
-                new FragmentManager.OnBackStackChangedListener() {
-
-            @Override
-            public void onBackStackChanged() {
-                Fragment f = getSupportFragmentManager().findFragmentById(R.id.main_frameLayout);
-                if (f != null){
-                    updateBottomBar(f);
-                }
-            }
-        });
+        getSupportFragmentManager().addOnBackStackChangedListener(this);
     }
 
     // Menu icons are inflated just as they were with actionbar
@@ -87,7 +80,21 @@ public class MainActivity extends BaseActivity implements BottomBar.Listener, Ad
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        int dataSource = DataSources.TRUYENFULL;
 
+        switch (position) {
+            case 0:
+                dataSource = DataSources.TRUYENFULL;
+                break;
+            case 1:
+                dataSource = DataSources.SSTRUYEN;
+                break;
+            case 2:
+                dataSource = DataSources.TRUYENYY;
+                break;
+        }
+
+        EventBus.getDefault().post(new ChangeDataSourceEventBus(dataSource));
     }
 
     @Override
@@ -113,6 +120,14 @@ public class MainActivity extends BaseActivity implements BottomBar.Listener, Ad
     @Override
     public void onBottomBarMoreClick() {
         replaceFragment(new MoreInfoFragment());
+    }
+
+    @Override
+    public void onBackStackChanged() {
+        Fragment f = getSupportFragmentManager().findFragmentById(R.id.main_frameLayout);
+        if (f != null){
+            updateBottomBar(f);
+        }
     }
 
     @Override

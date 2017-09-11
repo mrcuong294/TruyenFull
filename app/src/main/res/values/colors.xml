@@ -4,6 +4,8 @@
     <color name="bluGray700">#455A64</color>
     <color name="bluGray800">#37474F</color>
     <color name="bluGray900">#263238</color>
+    <color name="bluGray950">#1C2428</color>
+    <color name="bluGray999">#161819</color>
     
     <color name="green600">#8BC34A</color>
     <color name="green500">#8BC34A</color>

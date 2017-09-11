@@ -13,13 +13,13 @@ import com.nguyencuong.truyenfull.R;
  * Created by pc on 3/3/2017.
  */
 
-public class HomeBlockRecyclerDecoration extends RecyclerView.ItemDecoration {
+public class BooksBlockRecyclerDecoration extends RecyclerView.ItemDecoration {
 
     private final int MARGIN;
 
     private final int spanCount;
 
-    public HomeBlockRecyclerDecoration(Context context, int spanCount) {
+    public BooksBlockRecyclerDecoration(Context context, int spanCount) {
         MARGIN = context.getResources().getDimensionPixelSize(R.dimen.space_16);
         this.spanCount = spanCount;
     }

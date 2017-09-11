@@ -19,8 +19,8 @@ import com.nguyencuong.truyenfull.util.DensityUtils;
 
 import java.util.List;
 
-import static com.nguyencuong.truyenfull.widget.bookblock.HomeBlockRecyclerAdapter.ITEM_TYPE_GRID;
-import static com.nguyencuong.truyenfull.widget.bookblock.HomeBlockRecyclerAdapter.ITEM_TYPE_LIST_V;
+import static com.nguyencuong.truyenfull.widget.bookblock.BooksBlockRecyclerAdapter.ITEM_TYPE_GRID;
+import static com.nguyencuong.truyenfull.widget.bookblock.BooksBlockRecyclerAdapter.ITEM_TYPE_LIST_V;
 
 
 /**
@@ -29,19 +29,19 @@ import static com.nguyencuong.truyenfull.widget.bookblock.HomeBlockRecyclerAdapt
  * Created by Mr Cuong on 4/15/2017.
  * Email: vancuong2941989@gmail.com
  */
-public class HomeBlockView extends FrameLayout implements View.OnClickListener {
+public class BooksBlockView extends FrameLayout implements View.OnClickListener {
 
     public interface OnViewMoreListener {
         void onHomeBlockViewMoreClick(String urlMore);
     }
 
-    private static final String TAG = HomeBlockView.class.getSimpleName();
+    private static final String TAG = BooksBlockView.class.getSimpleName();
 
     private TextView title;
     private View btnViewMoreTop;
     private View btnViewMoreBottom;
 
-    private HomeBlockRecyclerAdapter adapter;
+    private BooksBlockRecyclerAdapter adapter;
 
     private OnViewMoreListener onViewMoreListener;
 
@@ -50,13 +50,13 @@ public class HomeBlockView extends FrameLayout implements View.OnClickListener {
     private String urlViewMore;
 
 
-    public HomeBlockView(@NonNull Context context, int style) {
+    public BooksBlockView(@NonNull Context context, int style) {
         super(context);
         this.style = style;
         init();
     }
 
-    public HomeBlockView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public BooksBlockView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         style = BlockStyle.STYLE_DEFAULT;
         init();
@@ -103,9 +103,9 @@ public class HomeBlockView extends FrameLayout implements View.OnClickListener {
         }
 
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setHasFixedSize(false);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new HomeBlockRecyclerAdapter(itemType, itemWidth);
+        adapter = new BooksBlockRecyclerAdapter(itemType, itemWidth);
         recyclerView.setAdapter(adapter);
     }
 
@@ -121,7 +121,7 @@ public class HomeBlockView extends FrameLayout implements View.OnClickListener {
         adapter.setListBooks(list);
     }
 
-    public void setOnItemClickListener(HomeBlockRecyclerAdapter.OnItemClickListener onItemClickListener) {
+    public void setOnItemClickListener(BooksBlockRecyclerAdapter.OnItemClickListener onItemClickListener) {
         adapter.setOnItemClickListener(onItemClickListener);
     }
 

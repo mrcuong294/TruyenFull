@@ -21,11 +21,13 @@ import es.dmoral.toasty.Toasty;
  * Created by Mr Cuong on 2/18/2017.
  */
 
-public abstract class BaseFragment extends Fragment {
+public abstract class BaseFragment<P extends BasePresenter> extends Fragment {
+
+    protected P mPresenter;
 
     private Unbinder unbinder;
 
-    protected DialogLoading dialogLoading;
+    protected DialogLoading mDialogLoading;
 
     protected boolean isLoadingBackPressExit = true;
 
@@ -34,28 +36,53 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(getFragmentLayout(), container, false);
         unbinder = ButterKnife.bind(this, v);
-        dialogLoading = new DialogLoading(getActivity());
-        dialogLoading.setOnPopupLoadingListener(new DialogLoading.OnPopupLoadingListener() {
-            @Override
-            public void onBackPressed() {
-                if (isLoadingBackPressExit) {
-                    getActivity().finish();
-                }
-            }
-        });
+
+        initPresenter();
         LogUtils.d("BaseFragment", "onCreateView");
         return v;
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        if (mPresenter != null) mPresenter.onStart();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mPresenter != null) mPresenter.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        if (mPresenter != null) mPresenter.onPause();
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        if (mPresenter != null) mPresenter.onStop();
+        super.onStop();
+    }
+
+    @Override
     public void onDestroyView() {
-        dialogLoading.dismiss();
-        dialogLoading = null;
+        if (mPresenter != null) {
+            mPresenter.onDestroy();
+        }
+        if (mDialogLoading != null) {
+            mDialogLoading.dismiss();
+            mDialogLoading = null;
+        }
         unbinder.unbind();
         super.onDestroyView();
     }
 
     protected abstract int getFragmentLayout();
+
+
+    protected abstract void initPresenter();
 
     protected void showToast(String mes) {
         Toast.makeText(getActivity().getApplicationContext(), mes, Toast.LENGTH_SHORT).show();
@@ -79,5 +106,24 @@ public abstract class BaseFragment extends Fragment {
 
     protected void showToastSuccess(String mes) {
         Toasty.success(getActivity().getApplicationContext(), mes + "", Toast.LENGTH_SHORT).show();
+    }
+
+    protected void showDialogLoading(boolean show) {
+        if (getActivity().isFinishing()) {
+            return;
+        }
+
+        if (mDialogLoading == null) {
+            mDialogLoading = new DialogLoading(getActivity());
+            mDialogLoading.setListener(new DialogLoading.Listener() {
+                @Override
+                public void onBackPressed() {
+                    if (isLoadingBackPressExit) {
+                        getActivity().finish();
+                    }
+                }
+            });
+        }
+        mDialogLoading.show(show);
     }
 }

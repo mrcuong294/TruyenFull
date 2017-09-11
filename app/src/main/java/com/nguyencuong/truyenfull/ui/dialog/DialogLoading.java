@@ -11,14 +11,14 @@ import com.nguyencuong.truyenfull.R;
 
 public class DialogLoading {
     private Dialog dialog;
-    private OnPopupLoadingListener onPopupLoadingListener;
+    private Listener listener;
 
     public DialogLoading(Context context) {
         build(context);
     }
 
-    public void setOnPopupLoadingListener(OnPopupLoadingListener onPopupLoadingListener) {
-        this.onPopupLoadingListener = onPopupLoadingListener;
+    public void setListener(Listener listener) {
+        this.listener = listener;
     }
 
     public boolean isShowing() {
@@ -55,8 +55,8 @@ public class DialogLoading {
             public boolean onKey(DialogInterface dialogInterface, int keyCode, KeyEvent keyEvent) {
 
                 if (keyCode == KeyEvent.KEYCODE_BACK) {
-                    if (onPopupLoadingListener != null)
-                        onPopupLoadingListener.onBackPressed();
+                    if (listener != null)
+                        listener.onBackPressed();
                     return true;
                 }
                 return false;
@@ -64,7 +64,7 @@ public class DialogLoading {
         });
     }
 
-    public interface OnPopupLoadingListener {
+    public interface Listener {
         void onBackPressed();
     }
 }

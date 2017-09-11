@@ -7,11 +7,24 @@ package com.nguyencuong.truyenfull;
  * Email: vancuong2941989@gmail.com
  */
 
-public abstract class BasePresenter<T> {
+public abstract class BasePresenter<V extends BaseView> {
+    protected final String TAG = this.getClass().getSimpleName();
 
-    protected T mView;
+    protected final V mView;
 
-    protected BasePresenter(T view) {
+    protected BasePresenter(V view) {
         this.mView = view;
     }
+
+    protected abstract void onCreated();
+
+    void onStart(){};
+
+    void onResume(){};
+
+    void onPause(){};
+
+    void onStop(){};
+
+    protected abstract void  onDestroy();
 }

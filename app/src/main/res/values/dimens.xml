@@ -9,4 +9,7 @@
     <dimen name="poster_size_w">109dp</dimen>
     <dimen name="poster_size_h">162dp</dimen>
     <dimen name="actionBarSize">48dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_12">12dp</dimen>
 </resources>

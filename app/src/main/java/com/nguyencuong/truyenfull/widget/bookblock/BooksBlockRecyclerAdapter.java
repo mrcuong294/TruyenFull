@@ -7,23 +7,23 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.nguyencuong.truyenfull.R;
 import com.nguyencuong.truyenfull.model.Book;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The adater for {@link RecyclerView} in {@link HomeBlockView}
- * use with {@link HomeBlockView} #HOME_ITEM_STYLE_GRID #HOME_ITEM_STYLE_LIST_H #HOME_ITEM_STYLE_LIST_V
+ * The adater for {@link RecyclerView} in {@link BooksBlockView}
+ * use with {@link BooksBlockView} #HOME_ITEM_STYLE_GRID #HOME_ITEM_STYLE_LIST_H #HOME_ITEM_STYLE_LIST_V
  * and type is {@link Book}
  * <p>
  * Created by Mr Cuong on 4/15/2017.
  * Email: vancuong2941989@gmail.com
  */
 
-public class HomeBlockRecyclerAdapter extends RecyclerView.Adapter {
+public class BooksBlockRecyclerAdapter extends RecyclerView.Adapter {
 
     public interface OnItemClickListener {
         void onBookItemClick(String url);
@@ -45,7 +45,7 @@ public class HomeBlockRecyclerAdapter extends RecyclerView.Adapter {
 
     private OnItemClickListener onItemClickListener;
 
-    public HomeBlockRecyclerAdapter(int itemType, int itemWidth) {
+    public BooksBlockRecyclerAdapter(int itemType, int itemWidth) {
         this.itemType = itemType;
         this.itemWidth = itemWidth;
 
@@ -144,8 +144,9 @@ public class HomeBlockRecyclerAdapter extends RecyclerView.Adapter {
                 poster.getLayoutParams().height = itemHeight;
             }
 
-            Glide.with(itemView.getContext())
+            Picasso.with(itemView.getContext())
                     .load(book.getPoster())
+                    .fit()
                     .error(R.drawable.default_poster)
                     .into(poster);
 
@@ -181,16 +182,16 @@ public class HomeBlockRecyclerAdapter extends RecyclerView.Adapter {
     public class ListVerticalViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView name;
-        private TextView categorys;
-        private TextView chapter;
+        private TextView chapterAndCategorys;
+        private TextView timeUpdate;
         private View iconFull, iconNew, iconHot;
 
         public ListVerticalViewHolder(View itemView) {
             super(itemView);
 
+            timeUpdate = (TextView) itemView.findViewById(R.id.book_time_update);
             name = (TextView) itemView.findViewById(R.id.book_name);
-            categorys = (TextView) itemView.findViewById(R.id.book_ctg);
-            chapter = (TextView) itemView.findViewById(R.id.book_chapter);
+            chapterAndCategorys = (TextView) itemView.findViewById(R.id.book_ctg);
             iconFull = itemView.findViewById(R.id.book_label_full);
             iconNew = itemView.findViewById(R.id.book_label_new);
             iconHot = itemView.findViewById(R.id.book_label_hot);
@@ -200,11 +201,17 @@ public class HomeBlockRecyclerAdapter extends RecyclerView.Adapter {
 
         public void bindView(Book book) {
 
+            if (getLayoutPosition() == 0) {
+                itemView.setBackgroundResource(R.drawable.ds_widget_books_block_bg_item_1_top);
+            } else {
+                itemView.setBackgroundResource(R.drawable.ds_widget_books_block_bg_item_1);
+            }
+
+            timeUpdate.setText(book.getTimeUpdate());
+
             name.setText(book.getName());
 
-            categorys.setText(book.getCategory());
-
-            chapter.setText(book.getChapter() + " | " + book.getTimeUpdate());
+            chapterAndCategorys.setText(book.getChapter() + " | " + book.getCategory());
 
             iconFull.setVisibility(book.isFull() ? View.VISIBLE : View.GONE);
             iconNew.setVisibility(book.isNew() ? View.VISIBLE : View.GONE);

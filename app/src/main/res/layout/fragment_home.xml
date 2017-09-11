@@ -1,13 +1,17 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_scroll_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nguyencuong.truyenfull.ui.fragment.mainhome.HomeFragment">
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/home_content_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment home" />
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical" />
 
-</FrameLayout>
+</android.support.v4.widget.NestedScrollView>

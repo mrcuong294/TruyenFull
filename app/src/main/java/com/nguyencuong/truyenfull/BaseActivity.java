@@ -19,8 +19,9 @@ import es.dmoral.toasty.Toasty;
  * Created by pc on 8/22/2017.
  */
 
-public class BaseActivity extends AppCompatActivity {
-    protected DialogLoading dialogLoading;
+public abstract class BaseActivity extends AppCompatActivity {
+
+    protected DialogLoading mDialogLoading;
 
     protected boolean enableButterKnight = true;
 
@@ -38,16 +39,6 @@ public class BaseActivity extends AppCompatActivity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             isScreenLand = false;
         }
-
-        dialogLoading = new DialogLoading(this);
-        dialogLoading.setOnPopupLoadingListener(new DialogLoading.OnPopupLoadingListener() {
-            @Override
-            public void onBackPressed() {
-                if (isLoadingBackPressExit) {
-                    finish();
-                }
-            }
-        });
     }
 
     @Override
@@ -60,8 +51,10 @@ public class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        dialogLoading.dismiss();
-        dialogLoading = null;
+        if (mDialogLoading != null) {
+            mDialogLoading.dismiss();
+            mDialogLoading = null;
+        }
         super.onDestroy();
     }
 
@@ -93,5 +86,24 @@ public class BaseActivity extends AppCompatActivity {
 
     protected void showToastSuccess(String mes) {
         Toasty.success(getApplicationContext(), mes + "", Toast.LENGTH_SHORT).show();
+    }
+
+    protected void showDialogLoading(boolean show) {
+        if (isFinishing()) {
+            return;
+        }
+
+        if (mDialogLoading == null) {
+            mDialogLoading = new DialogLoading(this);
+            mDialogLoading.setListener(new DialogLoading.Listener() {
+                @Override
+                public void onBackPressed() {
+                    if (isLoadingBackPressExit) {
+                        finish();
+                    }
+                }
+            });
+        }
+        mDialogLoading.show(show);
     }
 }
