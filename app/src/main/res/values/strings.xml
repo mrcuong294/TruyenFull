@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">TruyenFull</string>
 
+    <string name="admob_native_home_unit">ca-app-pub-7669115559356376/5340099748</string>
+
     <string name="bottom_bar_text_home">Trang chủ</string>
     <string name="bottom_bar_text_category">Danh mục</string>
     <string name="bottom_bar_text_library">Thư viện</string>

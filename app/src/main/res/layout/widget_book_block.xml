@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="@dimen/space_8"
+    android:elevation="2dp"
     android:background="@color/bluGray900">
 
     <TextView
@@ -69,13 +70,12 @@
         android:layout_marginTop="@dimen/space_4"
         android:layout_marginBottom="@dimen/space_4"
         android:padding="@dimen/space_8"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/divider"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/green600"
         android:text="@string/widget_books_block_action_view_more"/>
-
 
 </RelativeLayout>

@@ -5,9 +5,11 @@ import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.ads.NativeExpressAdView;
 import com.nguyencuong.truyenfull.BaseFragment;
 import com.nguyencuong.truyenfull.R;
 import com.nguyencuong.truyenfull.eventbus.ChangeDataSourceEventBus;
@@ -17,6 +19,7 @@ import com.nguyencuong.truyenfull.source.HomeRepository;
 import com.nguyencuong.truyenfull.widget.bookblock.BooksBlockRecyclerAdapter;
 import com.nguyencuong.truyenfull.widget.bookblock.BooksBlockView;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 
 import butterknife.BindView;
@@ -76,11 +79,24 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        addGroupButtonTop();
+
         mPresenter.onCreated();
+
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    public void onDestroyView() {
+        EventBus.getDefault().unregister(this);
+        super.onDestroyView();
     }
 
     @Subscribe
     public void onEventBusChangeDataSource(ChangeDataSourceEventBus eventBus) {
+        if (dataSource == eventBus.dataSource) return;
+
         dataSource = eventBus.dataSource;
         mPresenter.changeDataSource(dataSource);
     }
@@ -140,10 +156,41 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
     @Override
     public void addAdsView() {
 
+        NativeExpressAdView mAdView = new NativeExpressAdView(getActivity().getApplicationContext());
+        mAdView.setAdUnitId(getString(R.string.admob_native_home_unit));
     }
 
     @Override
     public void clearViews() {
         contentLayout.removeAllViews();
+        addGroupButtonTop();
+    }
+
+    public void addGroupButtonTop() {
+        if (contentLayout.getChildCount() == 0) {
+            LayoutInflater.from(getActivity())
+                    .inflate(R.layout.inc_group_button_top, contentLayout, true);
+
+            contentLayout.findViewById(R.id.vg_btn_top_day).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showToastSuccess("Top day clicked !");
+                }
+            });
+
+            contentLayout.findViewById(R.id.vg_btn_top_month).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showToastSuccess("Top month clicked !");
+                }
+            });
+
+            contentLayout.findViewById(R.id.vg_btn_top_alltime).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showToastSuccess("Top all time clicked !");
+                }
+            });
+        }
     }
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/space_8"
+    android:paddingTop="@dimen/space_16"
+    android:paddingBottom="@dimen/space_16"
+    android:paddingLeft="@dimen/space_4"
+    android:paddingRight="@dimen/space_4"
+    android:background="@color/bluGray900"
+    android:weightSum="3"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/vg_btn_top_day"
+        style="@style/AppTheme.Text.Body"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:layout_weight="1"
+        android:background="@drawable/ds_button_corners"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="Top ngày"/>
+
+    <TextView
+        android:id="@+id/vg_btn_top_month"
+        style="@style/AppTheme.Text.Body"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:layout_weight="1"
+        android:background="@drawable/ds_button_corners"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="Top tháng" />
+
+    <TextView
+        android:id="@+id/vg_btn_top_alltime"
+        style="@style/AppTheme.Text.Body"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:layout_weight="1"
+        android:background="@drawable/ds_button_corners"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="Top năm" />
+
+</LinearLayout>

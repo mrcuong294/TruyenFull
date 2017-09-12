@@ -103,7 +103,7 @@ public class BooksBlockView extends FrameLayout implements View.OnClickListener 
         }
 
         recyclerView.setNestedScrollingEnabled(false);
-        recyclerView.setHasFixedSize(true);
+        recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(layoutManager);
         adapter = new BooksBlockRecyclerAdapter(itemType, itemWidth);
         recyclerView.setAdapter(adapter);

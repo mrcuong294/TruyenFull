@@ -53,14 +53,16 @@ public class HomePresenter extends BasePresenter<HomeContract.View> implements H
         LogUtils.d(TAG, "changeDataSource : dataSource = " + dataSource);
         mView.clearViews();
         mHomeRepository.setDataSource(dataSource);
-        mLoaderManager.restartLoader(REQUEST_LOADER, null, mLoaderCallbacks);
+        mHomeLoader.setLoaded(false);
+        mHomeLoader.startLoading();
     }
 
     @Override
     public void reloadPage() {
         LogUtils.d(TAG, "reloadPage");
         mView.clearViews();
-        mLoaderManager.restartLoader(REQUEST_LOADER, null, mLoaderCallbacks);
+        mHomeLoader.setLoaded(false);
+        mHomeLoader.startLoading();
     }
 
     private LoaderManager.LoaderCallbacks<List<Block>> mLoaderCallbacks =
@@ -76,8 +78,9 @@ public class HomePresenter extends BasePresenter<HomeContract.View> implements H
         public void onLoadFinished(Loader<List<Block>> loader, List<Block> data) {
             mView.showLoading(false);
 
-            if (data.size() == 0) {
+            if (data == null || data.size() == 0) {
                 mView.showMsgError(true, R.string.error_msg_nodata);
+                return;
             }
 
             for (Block block : data) {

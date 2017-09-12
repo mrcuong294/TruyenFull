@@ -211,7 +211,7 @@ public class TruyenFullParser implements ParserInterface {
 
                     book.setNew(element.select("span.label-new").first() != null);
                     book.setHot(element.select("span.label-hot").first() != null);
-                    book.setFull(element.select("span.label-full").first() != null);
+                    book.setFull(true);
 
                     Element imgElement = element.select("div.lazyimg").first();
                     if (imgElement != null) {
